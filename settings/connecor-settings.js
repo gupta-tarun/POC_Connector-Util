@@ -1,20 +1,20 @@
 'use strict'
 
 var Settings = require('./settings.js')
-  , func = require('./methodImpl.js')
 
 var settings = new Settings()
 
-var options =
-  { source: "IO"
-  , type: "JSOn"
-  }
+var options = 'I am options!!!'
 
-var toggleWebHook = function(content) {
-  console.log('in toggleWebHook: ' + content)
+var toggleWebHook = function(options) {
+  console.log('in toggleWebHook: ' + options)
 }
 
-settings.register({name:'enable', method:func['enable']})
-settings.register({name:'saveSearch', method:func['saveSearch']})
-settings.register({name:'toggleWebHook', method:toggleWebHook})
-settings.save(options)
+settings.register({
+  name: 'toggleWebHook'
+  , method: toggleWebHook
+})
+
+settings.save(options, 'toggleWebHook')
+settings.save(options, 'A_NEW_FUCTION')
+settings.save(options, 'enable')

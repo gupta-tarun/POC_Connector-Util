@@ -2,12 +2,12 @@
 
 var func = {}
 
-func.enable = function(content) {
-  console.log('in enableOperation: ' + content)
+func.enable = function(options) {
+  console.log('in enableOperation: ' + options)
 }
 
-func.saveSearch = function(content) {
-  console.log('in saveSearchOperation: ' + content)
+func.saveSearch = function(options) {
+  console.log('in saveSearchOperation: ' + options)
 }
 
 module.exports = func
