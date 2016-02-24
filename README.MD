@@ -1,6 +1,6 @@
 # POC for connector-utils
 
-This is a sample code to complete the POC for the basis of utils.
+This is a sample code to complete the POC for the basis of utils .
 
 To run this by yourself please do the following steps
 
